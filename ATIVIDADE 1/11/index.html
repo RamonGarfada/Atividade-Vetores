@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sistema de Reserva de Poltronas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Sistema de Reserva de Poltronas</h1>
+    <h2>Fileiras A, B, C e D</h2>
+
+    <div id="cinema">
+        
+    </div>
+
+    <p>Poltronas Vazias: <span id="poltronasVazias">80</span></p>
+    <p>Poltronas Ocupadas: <span id="poltronasOcupadas">0</span></p>
+
+    <p>Reservar Poltrona:</p>
+    <label for="fileira">Fileira (A, B, C ou D): </label>
+    <input type="text" id="fileira" maxlength="1">
+    <label for="poltrona">Número da Poltrona (1-20): </label>
+    <input type="number" id="poltrona" min="1" max="20">
+    <button id="reservar">Reservar</button>
+
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Notas</title>
+</head>
+
+<body>
+    <h1>Calculadora de Notas</h1>
+
+    <p>Insira o cartão gabarito:</p>
+    <input type="text" id="gabaritoInput" placeholder="Ex: ABCDEABCDEABCDEABCDE">
+
+    <p>Número de alunos da turma:</p>
+    <input type="number" id="numAlunosInput">
+
+    <p>Insira o cartão de respostas de cada aluno:</p>
+    <textarea id="respostasAlunosInput" rows="5" cols="40" placeholder="Ex: 001ABCDEABCDEABCDEABCDE
+002ABCDEABCDEABCDEABCDE
+003ABCDEABCDEABCDEABCDE
+..."></textarea>
+
+    <button onclick="calcularNotas()">Calcular Notas</button>
+
+    <h2>Resultados:</h2>
+    <ul id="resultados"></ul>
+
+   <script src="main.js"></script>
+</body>
+
+</html>

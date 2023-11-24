@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Operações Aritméticas</title>
+</head>
+<body>
+    <h1>Operações Aritméticas</h1>
+    <p>Preencha os vetores e os operadores:</p>
+
+    <table>
+        <tr>
+            <th>Valor 1</th>
+            <th>Operador</th>
+            <th>Valor 2</th>
+            <th>Resultado</th>
+        </tr>
+
+        <script>
+            for (let i = 0; i < 20; i++) {
+                document.write(`
+                    <tr>
+                        <td><input type="number" id="valor1_${i}" /></td>
+                        <td><input type="text" id="operador_${i}" /></td>
+                        <td><input type="number" id="valor2_${i}" /></td>
+                        <td id="resultado_${i}"></td>
+                    </tr>
+                `);
+            }
+        </script>
+    </table>
+
+    <button onclick="calcularResultados()">Calcular</button>
+
+    <script src="main.js"></script>
+</body>
+</html>
